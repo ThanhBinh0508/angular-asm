@@ -1,0 +1,25 @@
+.menu{
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid rgb(73, 73, 73);
+    display: grid;
+    grid-template-columns: 20% 50% 15% 15%;
+}
+
+.menu1 a{
+    display: flex;
+    padding-left: 30px;
+    color: blue;
+    margin-top: 8px;
+}
+
+.menu3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+.menu4 {
+    margin: 0;
+    display: flex;
+    margin-top: 10px;
+}

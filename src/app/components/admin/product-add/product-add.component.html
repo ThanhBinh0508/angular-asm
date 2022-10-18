@@ -1,0 +1,37 @@
+<form (submit)="onHandleAdd()" >
+    <div class="form" [formGroup]="info" (ngSubmit)="onSubmit()">
+        <h1> Thêm sản phẩm mới</h1>
+        <div><label>Name</label>
+                <input type="text" class="form-control" name="product.name" formControlName="name" placeholder="Tên Sản Phẩm"
+                [(ngModel)]="product.name" />
+                <div *ngIf="form.name.errors">
+                        <div *ngIf="form.name.invalid">
+                                <div >
+                                        <span class="form-text text-muted ">Tên không được để rỗng</span>
+                                </div>
+                        </div>        
+                </div>
+        </div>
+        <div><label>OriginalPrice</label><input type="number" class="form-control" name="product.originalPrice" placeholder="Giá"
+                [(ngModel)]="product.originalPrice" /></div>
+        <div><label>SaleOffPrice</label><input type="number" class="form-control" name="product.saleOffPrice" placeholder="Giá khuyến mãi"
+                [(ngModel)]="product.saleOffPrice" /></div>
+        <div><label>Image</label><input type="file" class="form-control" name="product.image"
+                [(ngModel)]="product.image" /></div>
+        <div><label>Category</label><input type="text" class="form-control" name="product.category"
+                formControlName="name" placeholder="Thể Loại" formControlName="name" [(ngModel)]="product.category" />
+                <div *ngIf="form.category.errors">
+                        <div *ngIf="form.category.invalid">
+                                <div >
+                                        <span class="form-text text-muted ">Thể loại không được để rỗng</span>
+                                </div>
+                        </div>        
+                </div>
+                </div>
+        <div><label>Description</label><textarea name="product.description" class="form-control" placeholder="Mô tả "
+                formControlName="description" [(ngModel)]="product.description"></textarea></div>
+        <div><label>ShortDescription</label><textarea name="product.shortDescription" class="form-control"
+                 placeholder="Mô tả ngắn" [(ngModel)]="product.shortDescription"></textarea></div>
+    </div>
+    <button  class="mt-2 btn btn-primary">Submit</button>
+</form>

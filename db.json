@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Product A",
+      "originalPrice": 500000,
+      "image": "https://anhdep123.com/wp-content/uploads/2021/01/hinh-anh-robot.jpg",
+      "saleOffPrice": 359000,
+      "category": "category",
+      "description": "Robot phiên bản màu trắng 2022",
+      "shortDescription": "Robot"
+    },
+    {
+      "id": 3,
+      "name": "Product B",
+      "originalPrice": 0,
+      "image": "https://anhdep123.com/wp-content/uploads/2021/01/hinh-anh-robot.jpg",
+      "saleOffPrice": 0,
+      "category": "Product BProduct B",
+      "description": "Product BProduct B",
+      "shortDescription": "Product BProduct B"
+    },
+    {
+      "id": 4,
+      "name": "Product C",
+      "originalPrice": 5000000,
+      "image": "https://anhdep123.com/wp-content/uploads/2021/01/hinh-anh-robot.jpg",
+      "saleOffPrice": 4500000,
+      "category": "Product BProduct B",
+      "description": "Product BProduct B",
+      "shortDescription": "Product BProduct B"
+    }
+  ]
+}

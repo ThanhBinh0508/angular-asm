@@ -1,0 +1,14 @@
+<form (submit)="onHandleEdit()" *ngIf="product">
+    <div class="form">
+        <h1> Chỉnh sửa sản phẩm</h1>
+        <div><label>Name</label><input type="text" class="form-control" name="product.name" [(ngModel)]="product.name" /></div>
+        <div><label>OriginalPrice</label><input type="number" class="form-control" name="product.originalPrice"  [(ngModel)]="product.originalPrice"/></div>
+        <div><label>saleOffPrice</label><input type="number" class="form-control"  name="product.saleOffPrice"  [(ngModel)]="product.saleOffPrice"/></div>
+        <div><label>Image</label><input type="file" class="form-control" name="product.image"  [(ngModel)]="product.image"/></div>
+        <div><label>Category</label><input type="text" class="form-control" name="product.category" [(ngModel)]="product.category" /></div>
+        <div><label>Description</label><textarea name="product.description" class="form-control" [(ngModel)]="product.description" ></textarea></div>
+        <div><label>ShortDescription</label><textarea name="product.shortDescription" class="form-control" [(ngModel)]="product.shortDescription" ></textarea></div>
+    </div>
+    <button class="mt-2 btn btn-primary">Submit</button>
+ </form>
+ 
